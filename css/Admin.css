@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Teko";
+  src: url("fonts/Teko-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MaShan";
+  src: url("fonts/MaShanZheng-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sawarabi";
+  src: url("fonts/SawarabiMincho-Regular.ttf") format("truetype");
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #404040;
+}
+.top button{
+  width: 252px;
+  height: 70px;
+  background-color:	#D2B48C;
+  border: none;
+  font-family: "Teko";
+  font-size: 1.2em;
+}
+.top button:focus{
+  outline: none;
+}
+.top button:hover{
+  background-color: #b0926a;
+}
+.top button:active{
+  background-color: #9C7048;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("imgAdmin/wallpaper.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+}
+.panel{
+  display: none;
+  min-width: 200px;
+  min-height: 400px;
+  max-width: auto;
+  max-height: 600px;
+  background-color: black;
+  opacity: 50%;
+}
+.panel table{
+  width: 100vw;
+}
+.panel table tr td{
+  color: white;
+  width: auto;
+  border: 1px solid white;
+}
+#form{
+  min-width: 200px;
+  max-width: 400px;
+  margin: auto;
+  border: 3px;
+  color: white;
+  background-color: #404040;
+  border-radius: 15px;
+  font-family: "Teko";
+}
+.title{
+  border-radius: 15px 15px 0px 0px;
+  background-color: black;
+  text-align: center;
+}
+.center{
+  margin: 10px 50px 10px 50px;
+}
+table{
+  line-height: 30px;
+}
+.center tr td input{
+  margin-left: 20px;
+  font-family: "Teko";
+  width: 97px;
+}
+#name{
+  height: 23.2px;
+}
+tr td select{
+  margin-left: 20px;
+  font-family: "Teko";
+  width: 101px;
+}
+.bottom{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.submit{
+  width: 50%;
+  background-color:	#D2B48C;
+  border: none;
+  border-right: 1px solid black;
+  border-radius: 0px 0px 0px 15px;
+  font-family: "Teko";
+  font-size: 1.2em;
+}
+.submit:focus{
+  outline: none;
+}
+.submit:hover{
+  background-color: #b0926a;
+}
+.submit:active{
+  background-color: #9C7048;
+}
+.reset{
+  width: 50%;
+  background-color:	#D2B48C;
+  border: none;
+  border-radius: 0px 0px 15px 0px;
+  font-family: "Teko";
+  font-size: 1.2em;
+}
+.reset:focus{
+  outline: none;
+}
+.reset:hover{
+  background-color: #b0926a;
+}
+.reset:active{
+  background-color: #9C7048;
+}
+.form-hide{
+  display: none;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+.active{
+  display: grid;
+}
+.hide{
+  display: none;
+}

@@ -1,0 +1,252 @@
+/* Loader */
+.loader-wrapper {
+  transition: 0.5s;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #404040;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+@font-face {
+  font-family: "Teko";
+  src: url("fonts/Teko-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MaShan";
+  src: url("fonts/MaShanZheng-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sawarabi";
+  src: url("fonts/SawarabiMincho-Regular.ttf") format("truetype");
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  animation: animate 50s ease-in-out infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+@keyframes animate {
+  0%,100%{
+    background-image: url(img/1.jpg);
+  }
+  10%{
+    background-image: url(img/2.jpg);
+  }
+  20%{
+    background-image: url(img/3.jpg);
+  }
+  30%{
+    background-image: url(img/4.jpg);
+  }
+  40%{
+    background-image: url(img/5.jpg);
+  }
+  50%{
+    background-image: url(img/6.jpg);
+  }
+  60%{
+    background-image: url(img/7.jpg);
+  }
+  70%{
+    background-image: url(img/8.jpg);
+  }
+  80%{
+    background-image: url(img/9.jpg);
+  }
+  90%{
+    background-image: url(img/10.jpg);
+  }
+}
+.login-page{
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 200px;
+  margin: auto;
+  display: none;
+  grid-template-rows: 1fr 3fr 1fr;
+  border: 3px;
+  color: white;
+  background-color: #404040;
+  border-radius: 15px;
+  font-family: "Teko";
+}
+.login{
+  border-radius: 15px 15px 0px 0px;
+  background-color: black;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
+.login-main{
+  margin: 30px 40px 10px 40px;
+}
+.login-main tr td input{
+  margin-left: 20px;
+  font-family: "Teko";
+  width: 120px;
+}
+.login-submit{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.Log-in{
+  width: 50%;
+  background-color:	#D2B48C;
+  border: none;
+  border-right: 1px solid black;
+  border-radius: 0px 0px 0px 15px;
+  font-family: "Teko";
+  font-size: 1.2em;
+}
+.Log-in:focus{
+  outline: none;
+}
+.Log-in:hover{
+  background-color: #b0926a;
+}
+.Log-in:active{
+  background-color: #9C7048;
+}
+.Register{
+  width: 50%;
+  background-color:	#D2B48C;
+  border: none;
+  border-radius: 0px 0px 15px 0px;
+  font-family: "Teko";
+  font-size: 1em;
+}
+.Register:focus{
+  outline: none;
+}
+.Register:hover{
+  background-color: #b0926a;
+}
+.Register:active{
+  background-color: #9C7048;
+}
+#form{
+  min-width: 200px;
+  max-width: 400px;
+  margin: auto;
+  border: 3px;
+  color: white;
+  background-color: #404040;
+  border-radius: 15px;
+  font-family: "Teko";
+}
+.title{
+  border-radius: 15px 15px 0px 0px;
+  background-color: black;
+  text-align: center;
+}
+.center{
+  margin: 10px 50px 10px 50px;
+}
+table{
+  line-height: 30px;
+}
+.center tr td input{
+  margin-left: 20px;
+  font-family: "Teko";
+  width: 97px;
+}
+#name{
+  height: 23.2px;
+}
+tr td select{
+  margin-left: 20px;
+  font-family: "Teko";
+  width: 97px;
+}
+.bottom{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.submit{
+  width: 50%;
+  background-color:	#D2B48C;
+  border: none;
+  border-right: 1px solid black;
+  border-radius: 0px 0px 0px 15px;
+  font-family: "Teko";
+  font-size: 1.2em;
+}
+.submit:focus{
+  outline: none;
+}
+.submit:hover{
+  background-color: #b0926a;
+}
+.submit:active{
+  background-color: #9C7048;
+}
+.reset{
+  width: 50%;
+  background-color:	#D2B48C;
+  border: none;
+  border-radius: 0px 0px 15px 0px;
+  font-family: "Teko";
+  font-size: 1.2em;
+}
+.reset:focus{
+  outline: none;
+}
+.reset:hover{
+  background-color: #b0926a;
+}
+.reset:active{
+  background-color: #9C7048;
+}
+.form-hide{
+  display: none;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+.active{
+  display: grid;
+}
